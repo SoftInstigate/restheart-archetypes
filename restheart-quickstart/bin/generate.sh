@@ -5,4 +5,4 @@ mvn archetype:generate                                  \
   -DarchetypeArtifactId=restheart-quickstart            \
   -DarchetypeVersion=1.0-SNAPSHOT                       \
   -DgroupId=com.softinstigate.it                        \
-  -DartifactId=generatedArtifact
+  -DartifactId=generated-artifact

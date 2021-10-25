@@ -18,7 +18,7 @@
     <dependency>
       <groupId>org.restheart</groupId>
       <artifactId>restheart-commons</artifactId>
-      <version>${rhVersion}</version>
+      <version>${restheart-version}</version>
       <scope>provided</scope>
     </dependency>
 

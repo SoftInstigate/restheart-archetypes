@@ -1,21 +1,12 @@
 <archetype-descriptor xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd" name="restheart-archetype">
 
     <requiredProperties>
-        <requiredProperty key="rhVersion">
+        <requiredProperty key="restheart-version">
             <defaultValue>6.0.0</defaultValue>
-        </requiredProperty>
-        <requiredProperty key="helloWorldSvcEndpoint">
-            <defaultValue>hello</defaultValue>
         </requiredProperty>
     </requiredProperties>
 
     <fileSets>
-        <fileSet filtered="true" packaged="true">
-            <directory>src/main/java</directory>
-            <includes>
-                <include>**/*.java</include>
-            </includes>
-        </fileSet>
         <fileSet filtered="false" packaged="false">
             <directory>bin</directory>
         </fileSet>
