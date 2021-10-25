@@ -1,0 +1,30 @@
+<archetype-descriptor 
+    xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd" 
+    name="restheart-archetype" partial="true">
+
+    <requiredProperties>
+        <requiredProperty key="uri">
+            <defaultValue>generated</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="name">
+            <defaultValue>GeneratedService</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="description">
+            <defaultValue>Generated service description</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="enabled-by-default">
+            <defaultValue>true</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
