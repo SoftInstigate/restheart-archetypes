@@ -30,11 +30,11 @@ import org.restheart.plugins.RegisterPlugin;
 import org.restheart.utils.HttpStatus;
 
 @RegisterPlugin(
-    name = "${service-name}", 
-    description = "${service-description}", 
-    defaultURI = "/${service-uri}"
+    name = "${name}", 
+    description = "${description}", 
+    defaultURI = "/${uri}"
 )
-public class ${service-name} implements JsonService {
+public class ${name} implements JsonService {
     @Override
     public void handle(JsonRequest request, JsonResponse response) throws Exception {
         if (request.isOptions()) {
@@ -42,7 +42,7 @@ public class ${service-name} implements JsonService {
         } else if (request.isGet()) {
             var resp = new JsonObject();
             
-            resp.addProperty("msg", "Hello from ${service-name}");
+            resp.addProperty("msg", "Hello from ${name}");
         
             response.setContent(resp);
         } else {
